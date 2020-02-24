@@ -1,9 +1,17 @@
 # CSEU3-DataStructures-GP
 
 ## Arrays
+Arrays are contiguous blocks of memory that are addressable by a relative indexing where the array is grafted in to an empty space in memory. To talk about arrays I will be framing them in context to memory (RAM) and in their relation to this memory
+```Python
+# Arrays
 
+```
+
+## Python Lists
+For our purposes python lists could be thought of as arrays but they work more like a linked list. we will talk about their relationship with memory also. and we will look at the sim,ilarities and differences to arrays in a slightly abstract way.
 
 ## Linked Lists
+The Linked list is a slightly more disjoined version of an array where it follows similar to a python list but it is disjoined from the middle parts of the list. we will go in to a little more detail for this concept
 
 
 
