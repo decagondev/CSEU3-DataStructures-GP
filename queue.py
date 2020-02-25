@@ -1,20 +1,20 @@
 from doubly_linked_list import DoublyLinkedList
 
-class Stack:
+class Queue:
     def __init__(self):
         self.size = 0
         self.storage = DoublyLinkedList()
 
-    # push
-    def push(self, value):
+    # enqueue
+    def enqueue(self, value):
         self.size += 1
         self.storage.add_to_head(value)
 
-    # pop
-    def pop(self):
+    # dequeue
+    def dequeue(self):
         if self.size > 0:
             self.size -= 1
-            return self.storage.remove_from_head()
+            return self.storage.remove_from_tail()
         else:
             return None
 
