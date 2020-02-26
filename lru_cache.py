@@ -24,7 +24,18 @@ class LRUCache:
     key-value pair doesn't exist in the cache.
     """
     def get(self, key):
-        pass
+        # if the key exists in the storage
+        if key in self.storage:
+            # extract the node from storage at the key
+            node = self.storage[key] # => memory address of a ref to the actual node in the DLL
+            # move the node to end of order
+            self.order.move_to_end(node)
+            # return the value of the value of the node
+            return node.value[1] # => (n, 4)[1] => 4
+        # otherwise
+        else:
+            # return None
+            return None
 
     """
     Adds the given key-value pair to the cache. The newly-
@@ -52,7 +63,7 @@ class LRUCache:
         # if the size is the same as the limit (2)
         if self.size == self.limit:
             # delete the storage at the heads value key
-            del self.storage[self.order.head.value[0]]
+            del self.storage[self.order.head.value[0]] #  del dict1[name]
             # call remove from head on the order
             self.order.remove_from_head()
             # decrement size
