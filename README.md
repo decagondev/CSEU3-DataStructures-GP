@@ -67,7 +67,7 @@ These methods should all be as efficient as possible (we can get most of them do
 
 What is a Binary Search Tree?
 - tree structure
-- comprises of nodes that are in turn also binary search trees
+- comprises of nodes that are also binary search trees
 - has a max of 2 children (left, right)
 - left nodes data must always be lower value than the parents node
 - the nodes value must be greater than or equal to the parents node
