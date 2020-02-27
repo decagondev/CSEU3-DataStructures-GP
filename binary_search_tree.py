@@ -62,7 +62,7 @@ class BinarySearchTree:
             # otherwise
             else:
                 # call the contains method of the right child
-                self.right.contains(target)
+                return self.right.contains(target)
 
     # Return the maximum value found in the tree
     def get_max(self):
