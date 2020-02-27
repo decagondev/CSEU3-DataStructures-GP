@@ -63,3 +63,28 @@ Let's implement a text buffer data structure, that could be utilized by the text
 
 These methods should all be as efficient as possible (we can get most of them down to O(1) time). To achieve this, what data structure(s) would make good candidates for backing our text buffer implementation? An *array*? A *LinkedList*? A *DoublyLinkedList*?
 
+# Binary Search Tree
+
+What is a Binary Search Tree?
+- tree structure
+- comprises of nodes that are in turn also binary search trees
+- has a max of 2 children (left, right)
+- left nodes data must always be lower value than the parents node
+- the nodes value must be greater than or equal to the parents node
+- must contain an initial node to use as a pivot point to start traversals
+
+What is a Breadth first Traversal (BFT)?
+- technique for traveling through a tree like data structure 
+- moving in a row based horizontal manner from left to right through each nodes row 
+- and down to the next row after the current row is complete
+
+What is a Depth first Traversal?
+- technique for traveling through a tree like data structure 
+- travels down to the left most brach until it hits a leaf node
+- once hitting the leaf it will operate on each sibling of the left most child of the tree
+- then travel back up to the closest parent node
+- then operate on the next child of that node and further descendants
+- then it continues to travel through the tree to the bottom until traversed all paths
+
+
+
